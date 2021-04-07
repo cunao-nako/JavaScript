@@ -1,6 +1,3 @@
-let number = 50;
+let string = 'testString';
 
-while (number <= 55) {
-    console.log(number);
-    number++;
-}
+console.log(string);
