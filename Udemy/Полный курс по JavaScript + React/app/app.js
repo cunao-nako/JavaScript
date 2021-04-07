@@ -28,12 +28,13 @@ let personalMovieDB = {
 //   }
 // } while(i < 2);
 
-for (let i = 0; i < 2;) {
+for (let i = 0; i < 2; i++) {
   let movie = prompt('Один из последних фильмов что вы посмотрели?', '');
   let score = prompt('На сколько оцените его от 0 до 10?', '');
   if (movie && score && movie.length < 50) {
     personalMovieDB.movies[movie] = score;
-    i++;
+  } else {
+    i--;
   }
 }
 
