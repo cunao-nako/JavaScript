@@ -13,13 +13,20 @@ const movieDB = {
     this.movies.forEach((item, index) => {
       filmList.innerHTML += `<li class="promo__interactive-item">№${index + 1}: ${item}<div class="delete"></div></li>`;
     });
+
+    document.querySelectorAll('.delete').forEach((item, index) => {
+      item.addEventListener('click', () => {
+        item.parentElement.remove();
+        movieDB.movies.splice(index, 1);
+        this.showMovies();
+      });
+    });
   },
 };
 
 movieDB.showMovies();
 
-let addingForm = document.querySelector('.add'),
-    deleteIcons = document.querySelectorAll('.delete');
+let addingForm = document.querySelector('.add');
 
 addingForm.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -30,18 +37,7 @@ addingForm.addEventListener('submit', (event) => {
     if (isFavorite.checked) { console.log('Добавляем любимый фильм');}
     if (newFileName.length > 21) { newFileName = newFileName.slice(0, 21) + '...'; }
     movieDB.movies.push(newFileName);
-    inputTag.value = '';
-    isFavorite.checked = false;
+    event.target.reset();
     movieDB.showMovies();
     }
-});
-
-deleteIcons.forEach(item => {
-  item.addEventListener('click', (event) => {
-    let contentToDelete = event.target.parentElement,
-        filmName = contentToDelete.innerText.slice(4).toLowerCase();
-    console.log(filmName);
-    movieDB.movies =  movieDB.movies.filter(item => item.toLowerCase() !== filmName);
-    contentToDelete.remove();
-  });
 });
