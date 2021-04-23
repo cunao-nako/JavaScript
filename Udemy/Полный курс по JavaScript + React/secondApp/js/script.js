@@ -97,7 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   modalCloser.addEventListener('click', closeModalWindow);
 
-  window.addEventListener('scroll', showModalWindowOnce);
+  // window.addEventListener('scroll', showModalWindowOnce);
 
   modalWindow.addEventListener('click', (event) => {
     if (event.target === modalWindow) { closeModalWindow(); }
@@ -109,14 +109,15 @@ window.addEventListener('DOMContentLoaded', () => {
       console.log('esc');
     }
   });
+  //
+  // function showModalWindowOnce() {
+  //   if ( window.scrollY + document.documentElement.clientHeight >= document.documentElement.offsetHeight ) {
+  //     modalWindow.style.display = 'inline';
+  //     document.body.style.overflow = 'hidden';
+  //     window.removeEventListener('scroll', showModalWindowOnce);
+  //   }
+  // }
 
-  function showModalWindowOnce() {
-    if ( window.scrollY + document.documentElement.clientHeight >= document.documentElement.offsetHeight ) {
-      modalWindow.style.display = 'inline';
-      document.body.style.overflow = 'hidden';
-      window.removeEventListener('scroll', showModalWindowOnce);
-    }
-  }
   function showModalWindow() {
     modalWindow.style.display = 'inline';
     document.body.style.overflow = 'hidden';
@@ -128,8 +129,8 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   // On Top
-  let peper = document.querySelector('.pepper').querySelector('[alt="pepper"]');
-  peper.addEventListener('click', () => {
+  let pepper = document.querySelector('.pepper').querySelector('[alt="pepper"]');
+  pepper.addEventListener('click', () => {
     document.documentElement.scrollTo(0, 0);
   });
 
@@ -206,5 +207,33 @@ window.addEventListener('DOMContentLoaded', () => {
   function runAutoSlidingImg() {
     interval = setInterval(autoSlideImg, 2500);
   }
+
+  // Class в HTML
+  let menuContainer = document.querySelector('.container');
+  class MenuItem {
+    constructor (container, src, alt, subtitle, description, cost) {
+      // document.createElement('div');
+      // this.classList.add('menu__item');
+      // this.append
+    }
+  }
+
+  let itemA = menuContainer.appendChild(document.createElement('div'));
+
+
+
+  // <div className="menu__item">
+  //   <img src="img/tabs/vegy.jpg" alt="vegy">
+  //     <h3 className="menu__item-subtitle">Меню "Фитнес"</h3>
+  //     <div className="menu__item-descr">
+  //       Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и
+  //       фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!
+  //     </div>
+  //     <div className="menu__item-divider"></div>
+  //     <div className="menu__item-price">
+  //       <div className="menu__item-cost">Цена:</div>
+  //       <div className="menu__item-total"><span>229</span> грн/день</div>
+  //     </div>
+  // </div>
 
 });
