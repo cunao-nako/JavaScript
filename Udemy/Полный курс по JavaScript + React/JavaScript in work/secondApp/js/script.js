@@ -73,9 +73,9 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   function hideContent() {
-    let menuDescriptions = document.querySelectorAll('.tabcontent__descr');
+    let menutexts = document.querySelectorAll('.tabcontent__descr');
 
-    menuDescriptions.forEach(menu => {
+    menutexts.forEach(menu => {
       let text = menu.innerText;
       if ( text.includes(currentActive.innerText) ) { menu.parentElement.style.removeProperty('display'); }
       else { menu.parentElement.style.display = 'none'; }
@@ -208,32 +208,60 @@ window.addEventListener('DOMContentLoaded', () => {
     interval = setInterval(autoSlideImg, 2500);
   }
 
-  // Class в HTML
-  let menuContainer = document.querySelector('.container');
+  // Class для шаблонизации меню в HTML
   class MenuItem {
-    constructor (container, src, alt, subtitle, description, cost) {
-      // document.createElement('div');
-      // this.classList.add('menu__item');
-      // this.append
+    constructor (src, alt, title, text, cost, parent, ...classes) {
+      this.src = src;
+      this.alt = alt;
+      this.title = title;
+      this.text = text;
+      this.cost = cost;
+      this.parent = document.querySelector(parent);
+      this.classes = classes;
+    }
+
+    render() {
+      let element = document.createElement('div');
+      if (this.classes.length) { this.classes.forEach( className => element.classList.add(className) ); }
+      else { element.classList.add('menu__item'); }
+      element.innerHTML = `
+        <img src=${this.src} alt=${this.alt}>
+        <h3 class="menu__item-subtitle">${this.title}</h3>
+        <div class="menu__item-descr">${this.text}</div>
+        <div class="menu__item-divider"></div>
+        <div class="menu__item-price">
+          <div class="menu__item-cost">Цена:</div>
+          <div class="menu__item-total"><span>${this.cost}</span>грн/день</div>
+        </div>`;
+      this.parent.append(element);
     }
   }
 
-  let itemA = menuContainer.appendChild(document.createElement('div'));
+  new MenuItem("img/tabs/vegy.jpg",
+    'vegy',
+    'Меню "Фитнес"',
+    'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов.' +
+         ' Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
+    229,
+    '.menu .menu__field .container',
+    ).render();
 
+  new MenuItem("img/tabs/elite.jpg",
+    'elite',
+    'Меню “Премиум”',
+    'В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд.' +
+         ' Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!',
+    550,
+    '.menu .menu__field .container',
+  ).render();
 
-
-  // <div className="menu__item">
-  //   <img src="img/tabs/vegy.jpg" alt="vegy">
-  //     <h3 className="menu__item-subtitle">Меню "Фитнес"</h3>
-  //     <div className="menu__item-descr">
-  //       Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и
-  //       фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!
-  //     </div>
-  //     <div className="menu__item-divider"></div>
-  //     <div className="menu__item-price">
-  //       <div className="menu__item-cost">Цена:</div>
-  //       <div className="menu__item-total"><span>229</span> грн/день</div>
-  //     </div>
-  // </div>
-
+  new MenuItem("img/tabs/post.jpg",
+    'post',
+    'Меню "Постное"',
+    'Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, ' +
+         ' молоко из миндаля, овса, кокоса или гречки,' +
+         ' правильное количество белков за счет тофу и импортных вегетарианских стейков.',
+    430,
+    '.menu .menu__field .container',
+  ).render();
 });
