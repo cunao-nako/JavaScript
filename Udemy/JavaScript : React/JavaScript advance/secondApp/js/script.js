@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', () => {
-
   // Special Offer Timer
   let specialFinishDate = new Date(2021, 4, 10),
     days = document.querySelector('#days'),
@@ -264,4 +263,40 @@ window.addEventListener('DOMContentLoaded', () => {
     430,
     '.menu .menu__field .container',
   ).render();
+
+  // Forms
+  let forms = document.querySelectorAll('form'),
+      message = {
+        loading: 'Загрузка',
+        success: 'Успешная отправка!',
+        fail: 'Что-то пошло не так...',
+      },
+    timeIds = [];
+
+  forms.forEach(form => postData(form) );
+
+  function postData(form) {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      let statusMessage = document.createElement('div');
+      statusMessage.classList.add('status');
+      statusMessage.textContent = message.loading;
+      form.appendChild(statusMessage);
+
+      let request = new XMLHttpRequest(),
+          formData = new FormData(form);
+
+      request.open('POST', 'server.php');
+      request.setRequestHeader('Content-type', 'application/json');
+      request.send(formData);
+
+      request.addEventListener('load', () => {
+        if (request.status === 200) { statusMessage.textContent = message.success; }
+        else { statusMessage.textContent = message.fail; }
+        timeIds.forEach( id => clearTimeout(id) );
+        timeIds.push( setTimeout(() => statusMessage.remove(),1500) );
+        form.reset();
+      });
+    });
+  }
 });
