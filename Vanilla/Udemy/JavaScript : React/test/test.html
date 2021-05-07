@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: space-around;
+        }
+        form {
+            display: flex;
+            align-content: center;
+            margin-top: 20px;
+        }
+        button {
+            width: 100px;
+            height: 20px;
+
+        }
+        .messages {
+            overflow: hidden;
+            max-width: 100px;
+            max-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <script defer src="test.js"></script>
+    <h2>Чат:</h2>
+    <form>
+        <input type="text" placeholder="Сообщение:" name="message"><br><br>
+        <input type="submit" value="Отправить">
+    </form> <br>
+    <h3>Сообщения:</h3>
+    <div class="messages">
+    </div>
+    <button class="messages-cleaner">Очистить</button>
+    <h2>Динамика:</h2>
+    <button class="bg-changer">Сменить фон</button>
+</body>
+</html>

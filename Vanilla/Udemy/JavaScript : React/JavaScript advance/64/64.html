@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Заголовок</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper show login">
+        <form class="form-signin">
+            <h2 class="form-signin-heading">This is form</h2><br>
+            <label>
+                <input type="text" class="form-control" placeholder="nickname:" name="nickname" required>
+            </label><br>
+            <div>
+                <label for="checkbox">
+                    Не запоминать
+                </label>
+                <input id="checkbox" type="checkbox" name="checkbox">
+            </div>
+            <button class="btn btn-block btn-lg btn-primary signin">Confirm</button>
+        </form>
+        <button class="btn btn-block btn-lg btn-primary change">Change color</button>
+    </div>
+    <div class="wrapper hide main">
+        <h2 class="form-signin-heading">This is main page</h2><br>
+        <h2 class="form-signin-heading greeting"></h2><br>
+        <button class="btn btn-block btn-lg btn-primary logout">Leave</button>
+        <button class="btn btn-block btn-lg btn-primary change">Change color</button>
+    </div>
+    <script src="64.js"></script>
+</body>
+</html>

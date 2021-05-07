@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    background-color: white;
+    width: 400px;
+    margin: 40px auto 0 auto;
+    border: 1px solid rgba(0,0,0, .2);
+    padding: 20px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+[type=checkbox] {
+    margin-top: 20px;
+}
+
+.form-signin {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
