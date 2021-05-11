@@ -21,6 +21,22 @@
 // console.log(user1.say('hi'));
 
 // инкапсуляция в классеx
-class User(name, surname) {
-  constructor
+class User {
+  constructor(name, surname) {
+    this.name = name;
+    this._surname = surname;
+  }
+
+  say() {
+    console.log(`Имя: ${this.name}; Фамилия: ${this._surname};`);
+  }
+
+  get surname() { return this._surname; }
+  set surname(surname) { this._surname = surname; }
 }
+
+let ivan = new User('Ivan', 'Ivanov');
+ivan.say();
+
+console.log(ivan.surname);
+ivan.say();
