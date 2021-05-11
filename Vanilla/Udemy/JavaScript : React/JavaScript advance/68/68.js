@@ -20,4 +20,4 @@ user1.userName = 'J';
 user1.setName('Jhon');
 console.log(user1.say('hi'));
 
-// инкапсуляция в классе
+// инкапсуляция в классеx

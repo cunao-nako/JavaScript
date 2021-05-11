@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="64aeecfe-0541-4f55-969e-1252b09163ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/react.js.org.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Icon&#10;" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript Ninja/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript Ninja/.idea/JavaScript Ninja.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript Ninja/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript Ninja/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript Ninja/chapterI/2/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript Ninja/chapterI/2/2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript Ninja/chapterI/3/3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript Ninja/chapterI/3/3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript Ninja/chapterI/test/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript Ninja/chapterI/test/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/ dataTypes/arrayMethods/arrayMethods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/ dataTypes/arrayMethods/arrayMethods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/ dataTypes/arrays/arrays.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/ dataTypes/arrays/arrays.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/ dataTypes/numbers/number.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/ dataTypes/numbers/numbers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/ dataTypes/strings/strings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/ dataTypes/strings/strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/ dataTypes/test/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/ dataTypes/test/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/.idea/JavaScript.ru.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/.idea/dictionaries/igor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/??/??.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/??/??.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/alert/alert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/alert/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/alert_prompt_confirm/alert_prompt_confirm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/alert_prompt_confirm/alert_prompt_confirm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/arrowFunctions/arrowFunctions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/arrowFunctions/arrowFunctions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/basicOperators_mathematics/basicOperators_mathematics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/basicOperators_mathematics/basicOperators_mathematics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/dataTypeConversion/dataTypeConversion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/dataTypeConversion/dataTypeConversion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/dataTypes/dataTypes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/dataTypes/dataTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/functionDeclaration/functionDeclaration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/functionDeclaration/functionDeclaration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/functionExpression/functionExpression.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/functionExpression/functionExpression.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/if/if.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/if/if.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/logicalOperators/logicalOperators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/logicalOperators/logicalOperators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/switch/switch.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/switch/switch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/test/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/test/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/variables/variables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/variables/variables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/while_for/while_for.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/while_for/while_for.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/сomparisonOperators/сomparisonOperators.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/javaScriptBasics/сomparisonOperators/сomparisonOperators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/convertingObjectsToPrimitives/convertingObjectsToPrimitives.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/convertingObjectsToPrimitives/convertingObjectsToPrimitives.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/copying_objects_links/copying_objects_links.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/copying_objects_links/copying_objects_links.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/garbageCollection/garbageCollection.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/garbageCollection/garbageCollection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/objects/objects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/objects/objects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/optionalChain_?/optionalChain_?.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/optionalChain_?/optionalChain_?.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/symbolDataType/symbolDataType.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/symbolDataType/symbolDataType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/test/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/test/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/this/this.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/this/this.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/сonstructors_new/сonstructors_new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JavaScript.ru/objects_theBasics/сonstructors_new/сonstructors_new.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/appendix/JSON.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/appendix/arguments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/appendix/dom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/appendix/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/appendix/exceptions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/appendix/fibonacci.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/appendix/jquery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/appendix/listener.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/appendix/regexp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter1/behavior.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter1/birthday.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter1/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter1/generic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter1/howdy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter1/icecream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter1/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter1/kids.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter10/addN.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter10/aloha.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter10/cola.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter10/fun.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter10/plane.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter10/shellgame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/bakeSolution.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/challenge.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/five.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/fiveblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/four.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/fourblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/imageClosure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/one.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/oneblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/three.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/threeblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/two.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/twoblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/zero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/chapter9WithClosure/zeroblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/closureExercise.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/counterClosure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/divClosure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/flyAndQuack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/justAVar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/justSayin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/timerClosure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter11/vaccine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter12/cadi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter12/car.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter12/carAndDog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter12/coffee.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter12/dog1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter12/dog2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter12/dogCatcher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/cliche.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/dog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/dog1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/dog2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/dog3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/dog4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/dog5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/palindrome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/robotOverride.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/robots.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/robotsGame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/robotsHasOwnProperty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/showdogs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/showdogsCleanup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/showdogsTester.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter13/spacerobots.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter2/battleship-final.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter2/battleship.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter2/battleship.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter3/areaAndDistance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter3/bake.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter3/bark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter3/sherlock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter3/thingamajig.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter4/bubbles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter4/bubbles2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter4/icecream.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter4/phrase-o-matic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter5/autoomatic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter5/carProps.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter5/carWithDrive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter5/carWithDriveExercise.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter5/carWithFuel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter5/eightball.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter5/prequal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter5/secret.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter6/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter6/drevel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter6/planets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter7/duck.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter7/typeof.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter7/types.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter8/battleship.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter8/battleship.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter8/battleship_tester.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter8/battleship_tester.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/event.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/five.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/fiveblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/four.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/fourblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/imageMouse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/imageMultiple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/imageReblur.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/image_start.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/map.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/one.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/oneblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/resize.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/three.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/threeblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/ticktock.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/two.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/twoblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/zero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/chapter9/zeroblur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/extras/letWithClosures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/extras/timer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/Materials/extras/varWithClosures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/array/array.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/array/array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/battleships/battleships.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/battleships/battleships.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/bubbles/bubbles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/bubbles/bubbles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/bubbles/bubbles2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/bubbles/bubbles2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/car/car.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/car/car.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/dogs/dogs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/dogs/dogs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/dom/dom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/dom/dom.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/dom/dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/finalbattleships/board.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/finalbattleships/finalbattleships.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/finalbattleships/finalbattleships.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/finalbattleships/finalbattleships.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/finalbattleships/miss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/finalbattleships/ship.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/string/strings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/string/strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/test/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Learning JavaScript/test/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/.idea/andromeda.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/JavaScript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-300.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-300.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-300.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-300.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-300.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-600.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-600.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-600.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-600.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-600.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/fonts/open-sans-v18-latin-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Projects/andromeda/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/.idea/JavaScript : React.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/.idea/jsLinters/jshint.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/form/spinner.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/icons/Group 5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/icons/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/icons/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/icons/left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/icons/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/icons/right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/icons/switch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/icons/veg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/slider/food-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/slider/olive-oil.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/slider/paprika.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/slider/pepper.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/tabs/elite.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/tabs/hamburger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/tabs/post.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/img/tabs/vegy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/App/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript advance/51/51.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript advance/51/51.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript advance/52/dataFiles/currentCurrency.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript advance/52/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript advance/52/js/52.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript advance/55/55.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript advance/55/55.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript advance/56/56.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript advance/56/56.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript advance/57/57.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript advance/57/57.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/14/14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/14/14.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/17/17.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/17/17.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/19/19.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/19/19.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/20/20.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/20/20.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/21/21.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/21/21.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/22/22.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/22/22.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/23/23.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/23/23.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/28/28.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/28/28.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/28/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/29/29.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/29/29.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/29/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/css/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/css/style.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/icons/Logotype.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/icons/Star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/icons/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/icons/trash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/img/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/img/content_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/img/content_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/img/content_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/img/mars.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/30/sass/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/31/css.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/31/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/31/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/32/32.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/32/32.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/css/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/css/style.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/icons/Logotype.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/icons/Star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/icons/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/icons/trash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/img/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/img/content_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/img/content_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/img/content_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/img/mars.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/33/sass/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/34/34.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/34/34.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/35/35.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/35/35.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/35/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/5/5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/5/5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/6/6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/6/6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/7/7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/7/7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/firstApp/firstApp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript basics/firstApp/firstApp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/37/37.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/37/37.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/37/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/39/39.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/39/39.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/39/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/40/40.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/40/40.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/42/42.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/42/42.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/42/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/45/45.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/45/45.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/45/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/46/46.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/46/46.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/47/47.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/JavaScript in work/47/47.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/test/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/test/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Udemy/JavaScript : React/test/test.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1ryZ0swft7xudtbgY0yvFBl9BLr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="64aeecfe-0541-4f55-969e-1252b09163ef" name="Default Changelist" comment="" />
+      <created>1619950070133</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619950070133</updated>
+      <workItem from="1619950071305" duration="1969000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
