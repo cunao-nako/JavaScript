@@ -43,25 +43,23 @@ function tabs() {
   }
 
   function changeContent (target) {
-  currentActive.classList.toggle('tabheader__item_active');
-  target.classList.toggle('tabheader__item_active');
-  currentActive = target;
-  hideContent();
+    currentActive.classList.toggle('tabheader__item_active');
+    target.classList.toggle('tabheader__item_active');
+    currentActive = target;
+    hideContent();
   }
 
   function hideContent() {
-  let menuTexts = document.querySelectorAll('.tabcontent__descr');
+    let menuTexts = document.querySelectorAll('.tabcontent__descr');
 
-  menuTexts.forEach(menu => {
-  let text = menu.innerText;
-  if ( text.includes(currentActive.innerText) ) { menu.parentElement.style.removeProperty('display'); }
-  else { menu.parentElement.style.display = 'none'; }
+    menuTexts.forEach(menu => {
+    let text = menu.innerText;
+    if ( text.includes(currentActive.innerText) ) { menu.parentElement.style.removeProperty('display'); }
+    else { menu.parentElement.style.display = 'none'; }
   });
   }
 
-  function contentTimer() {
-  contentTimerValue = setInterval(autoSlide, 3000);
-  }
+  function contentTimer() { contentTimerValue = setInterval(autoSlide, 3000); }
 }
 
-module.exports = tabs;
+export default tabs;

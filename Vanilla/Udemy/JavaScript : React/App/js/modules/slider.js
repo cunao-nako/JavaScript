@@ -143,7 +143,7 @@ function slider() {
   }
 }
 
-module.exports = slider;
+export default slider;
 
 // Slider v0.1
 // let offerImgs = document.querySelectorAll('.offer__slide'),

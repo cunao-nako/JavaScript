@@ -1,10 +1,12 @@
 // Modal windows
+
+import {showModalWindow} from './form';
+import {closeModalWindow} from './form';
+
 function modal() {
-
-  const form = require('./form');
-
   let modalWindowButtons = document.querySelectorAll('[data-modal]'),
-      modalWindow = document.querySelector('.modal');
+      modalWindow = document.querySelector('.modal'),
+      modal = document.querySelector('.modal');
 
   modalWindowButtons.forEach(button => button.addEventListener('click', showModalWindow));
 
@@ -23,4 +25,4 @@ function modal() {
   });
 }
 
-module.exports = modal;
+export default modal;

@@ -1,7 +1,4 @@
 function form() {
-  
-  const modal = require('./modal');
-
   let forms = document.querySelectorAll('form'),
     message = {
       loading: 'img/form/spinner.svg',
@@ -9,7 +6,8 @@ function form() {
       fail: 'Что-то пошло не так...',
     },
     spinner = document.createElement('img'),
-    spinnerExists = false;
+    spinnerExists = false,
+    modal = document.querySelector('.modal');
 
   forms.forEach(form => bindPostData(form));
 
@@ -40,7 +38,7 @@ function form() {
 
       let json = JSON.stringify(Object.fromEntries(formData.entries()));
 
-      postData('http://localhost:3000/requests', json)
+      postData('http://127.0.0.1:5500/Vanilla/Udemy/JavaScript%20%3A%20React/App/db.json', json)
           .then(() => {
             feedBack(message.success);
             spinner.remove();
@@ -68,26 +66,30 @@ function form() {
     modal.modalWindow.append(newDialog);
     showModalWindow();
   }
-
-  function showModalWindow() {
-    console.log('показываю');
-    modal.modalWindow.style.display = 'inline';
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeModalWindow() {
-    if (modal.modalWindow.querySelector('.new')) { modal.modalWindow.querySelector('.new').remove(); }
-    if (modal.modalWindow.querySelector('.modal__dialog').getAttribute('style')) {
-      modal.modalWindow.querySelector('.modal__dialog').removeAttribute('style');
-    }
-    modal.modalWindow.style.display = 'none';
-    document.body.style.overflow = '';
-    spinner.remove();
-    spinnerExists = false;
-  }
 }
 
-module.exports = form;
+function showModalWindow() {
+  let modal = document.querySelector('.modal');
+  modal.style.display = 'inline';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModalWindow() {
+  let modal = document.querySelector('.modal');
+  if (modal.querySelector('.new')) { modal.querySelector('.new').remove(); }
+  if (modal.querySelector('.modal__dialog').getAttribute('style')) {
+    modal.querySelector('.modal__dialog').removeAttribute('style');
+  }
+  modal.style.display = 'none';
+  document.body.style.overflow = '';
+  spinner.remove();
+  spinnerExists = false;
+}
+
+export default form;
+
+export {showModalWindow};
+export {closeModalWindow};
 
 // библиотека axios заместо fetch();
 // axios.get('http://localhost:3000/menu')
