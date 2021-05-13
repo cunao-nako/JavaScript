@@ -1,6 +1,6 @@
-function myModule() {
-  this.hello = () => console.log('hello');
-  this.goodbye = () => console.log('goodbue');
-}
+const myModule = require('./71_2.js');
 
-module.exports = myModule;
+const newModule = new myModule();
+
+newModule.hello();
+newModule.goodbye();
