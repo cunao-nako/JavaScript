@@ -1,6 +1,7 @@
 import 'jquery';
 
-let x = $('#btn');
+$(document).ready(function() {
+  $('.list-item:first').hover(function() { $(this).toggleClass('active'); });
 
-console.log(x);
-
+  $('.list-item:contains("Третий")').click(function() { $('.wrapper img:odd').fadeToggle() });
+});

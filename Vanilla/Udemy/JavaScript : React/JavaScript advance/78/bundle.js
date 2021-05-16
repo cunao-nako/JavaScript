@@ -10973,10 +10973,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 
-let x = $('#btn');
+$(document).ready(function() {
+  $('.list-item:first').hover(function() { $(this).toggleClass('active'); });
 
-console.log(x);
-
+  $('.list-item:contains("Третий")').click(function() { $('.wrapper img:odd').fadeToggle() });
+});
 
 })();
 
