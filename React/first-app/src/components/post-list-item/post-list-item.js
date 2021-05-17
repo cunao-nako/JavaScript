@@ -13,7 +13,6 @@ class PostListItem extends Component {
   }
 
   clickImportant = () => this.setState( state => ({ important: !state.important, }) );
-  clickTrash = () => console.log('trash');
   clickLike = () => this.setState( state => ({ like: !state.like }) );
 
   render() {
@@ -33,7 +32,7 @@ class PostListItem extends Component {
           <button className="btn-star btn-sm" onClick={this.clickImportant}>
               <i className="fa fa-star"></i>
           </button>
-          <button className="btn-trash btn-sm" onClick={this.clickTrash}>
+          <button className="btn-trash btn-sm" onClick={this.props.clickTrash}>
               <i className="fa fa-trash-o"></i>
           </button>
           <i className="fa fa-heart"></i>
