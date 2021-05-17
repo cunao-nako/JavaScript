@@ -34,15 +34,17 @@ class App extends Component{
 
   addPost = (event, label) => {
     event.preventDefault();
-    let id,
-        newData = this.state.data.slice();
-    try {
-      id = this.state.data[this.state.data.length - 1].id + 1;
-    } catch(e) { id = 0;}
-    
-    newData.push({label, id});
-    this.setState(state => ({ data: newData }));
-    event.target.reset();
+    if (label) {
+      let id,
+          newData = this.state.data.slice();
+      try {
+        id = this.state.data[this.state.data.length - 1].id + 1;
+      } catch(e) { id = 0;}
+
+      newData.push({label, id});
+      this.setState(state => ({ data: newData }));
+      event.target.reset();
+    }
   }
 
   render() {

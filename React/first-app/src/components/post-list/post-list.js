@@ -6,7 +6,7 @@ import PostListItem from '../post-list-item/post-list-item';
 
 import './post-list.css';
 
-const PostList = ({posts, clickTrach}) => {
+const PostList = ({posts, clickTrach, likesCounter}) => {
   
   const elements = posts.map(item => {
     return(

@@ -20,8 +20,8 @@ class PostListItem extends Component {
         classNames = 'app-list-item d-flex justify-content-between';
 
     if (this.state.important) { classNames += ' important'}
-    if (this.state.like) { classNames += ' like'}
-
+    if (this.state.like) { classNames += ' like'; }
+  
     return(
 
       <div className={classNames}>
