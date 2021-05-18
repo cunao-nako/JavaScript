@@ -19,22 +19,12 @@ class App extends Component{
   constructor(props) {
     super(props);
     this.state = {
-      data: [
-        {label: 'Playing with React', important: false, liked: false, id: 1},
-        {label: 'Have some fun with it ...', important: false, liked: false, id: 2},
-        {label: '... Fucking JSX ...', important: false, liked: false, id: 3},
-      ],
+      data: [],
       likedPostsOnly: false,
       filter: '',
       searchingQuerry: '',
     };
   }
-
-  // deletePost = id => this.changindData(id, 'delete');
-
-  // clickLike = id => this.changindData(id, 'liked');
-
-  // clickImportant = id => this.changindData(id, 'important');
 
   searchingQuerry = text => this.setState({searchingQuerry: text});
 
