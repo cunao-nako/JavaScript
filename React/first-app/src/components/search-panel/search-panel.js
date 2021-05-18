@@ -2,9 +2,15 @@ import React from 'react';
 
 import './search-panel.css';
 
-const SearchPanel = () => {
+const SearchPanel = ({searchingPosts, clearInput}) => {
   return(
-    <input className='form-control search-input' type='text' placeholder='Search posts'></input>
+    <input
+      className='form-control search-input'
+      type='text'
+      placeholder='Search posts'
+      onChange={() => searchingPosts(document.querySelector('input').value)}
+      value={clearInput}
+    />
   );
 }
 

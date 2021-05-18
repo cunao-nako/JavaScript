@@ -16,15 +16,11 @@ const HeaderDiv = styled.div`
   }
 `;
 
-// const StyledHeaderDiv = styled(HeaderDiv)`
-//   background-color: grey;
-// `;
-
-const Header = ({totalPosts}) => {
+const Header = ({totalPosts, totalLikes}) => {
   return(
     <HeaderDiv>
       <h1>Twider</h1>
-      <h2>posts: {totalPosts} liked: 0</h2>
+      <h2>posts: {totalPosts} liked: {totalLikes}</h2>
     </HeaderDiv>
   );
 }
