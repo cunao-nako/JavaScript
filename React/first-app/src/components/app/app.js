@@ -13,8 +13,7 @@ const AppDiv = styled.div`
   max-width: 800px;
 `;
 
-let totalLikes = 0,
-    activeButton;
+let activeButton;
 
 class App extends Component{
   constructor(props) {
@@ -26,32 +25,69 @@ class App extends Component{
         {label: '... Fucking JSX ...', important: false, liked: false, id: 3},
       ],
       likedPostsOnly: false,
-      searching: false,
+      filter: '',
+      searchingQuerry: '',
     };
   }
 
-  deletePost = id => this.changindData(id, 'delete');
+  // deletePost = id => this.changindData(id, 'delete');
 
-  clickLike = id => this.changindData(id, 'liked');
+  // clickLike = id => this.changindData(id, 'liked');
 
-  clickImportant = id => this.changindData(id, 'important');
+  // clickImportant = id => this.changindData(id, 'important');
 
-  searchingPosts = (text) => {
-    if(text) { this.setState(({searching: text})); }
-    else { this.setState(({searching: false})); }
-  };
+  searchingQuerry = text => this.setState({searchingQuerry: text});
 
-  showLikedPosts = event => {
-    this.setState(state => ({ likedPostsOnly: !state.likedPostsOnly, }));
-    this.changeActiveButton(event.target);
+  returnFindedPosts = text => {
+    if (text) {
+      return this.state.data.filter( post => post.label.toLowerCase().includes(text.toLowerCase()) ); 
+    } else { return this.state.data; }
   }
 
-  showAllPosts = event => {
-    this.setState(() => ({
-      likedPostsOnly: false,
-      searching: false,
-    }));
-    this.changeActiveButton(event.target);
+  setFilter = filter => this.setState({filter});
+
+  filterPosts = (items, filter) => {
+    if (filter === 'liked') {
+      return items.filter(post => post.liked);
+    } else { return items; }
+  }
+
+  addPost = label => {
+    let data = this.state.data,
+        newData = data.slice(),
+        id = data.length ? data[data.length - 1].id + 1 : 0;
+
+    newData.push({ label, important: false, liked: false, id });
+
+    this.setState(() => ({ data: newData }));
+  }
+
+  changindData = (itemId, operation) => {
+    const data = this.state.data,
+        index = data.indexOf(data.find(item => item.id === itemId)),
+        {label, important, liked, id} = data[index];
+
+    let newData;
+
+    if (operation === 'delete') {
+      newData = [...data.slice(0, index), ...data.slice(index + 1)];
+
+      return this.setState( () => ({ data: newData }));
+    }
+
+    if (operation === 'like' || operation === 'important') {
+      let changedItem;
+      
+      if (operation === 'like') {
+        changedItem = {label, important, liked: !liked, id};
+      } else {
+        changedItem = {label, important: !important, liked, id};
+      }
+
+      newData = [...data.slice(0, index), changedItem, ...data.slice(index + 1)];
+    
+      return this.setState(() => ({data: newData}));
+    }
   }
 
   changeActiveButton = target => {
@@ -75,86 +111,30 @@ class App extends Component{
     }
   }
 
-  likesCounter = (grade = true) => {
-    if (grade) { totalLikes += 1; }
-    else { totalLikes -=1; }
-  } 
-
-  addPost = (event, label) => {
-    event.preventDefault();
-
-    if (label) {
-      let id,
-          newData = this.state.data.slice();
-      try {
-        id = this.state.data[this.state.data.length - 1].id + 1;
-      } catch(e) { id = 0;}
-
-      newData.push({
-        label,
-        important: false,
-        liked: false,
-        id,
-      });
-
-      this.setState(() => ({ data: newData }));
-      event.target.reset();
-    }
-  };
-
-  changindData = (itemId, operation) => {
-
-    let data = this.state.data,
-        index = data.indexOf(data.find(item => item.id === itemId)),
-        newData,
-        {label, important, liked, id} = data[index];
-
-    if (operation === 'delete') {
-      if (data[index].liked) { this.likesCounter(false); }
-
-      newData = [...data.slice(0, index), ...data.slice(index + 1)];
-
-      return this.setState( () => ({ data: newData }));
-    }
-
-    if (operation === 'liked') {
-      if (!liked) { this.likesCounter(); }
-      else { if(totalLikes) { this.likesCounter(false); }}
-
-      newData = [...data.slice(0, index), {label, important, liked: !liked, id}, ...data.slice(index + 1)];
-    
-      return this.setState(() => ({data: newData}));
-    }
-
-    if (operation === 'important') {
-      newData = [...this.state.data.slice(0, index), {label, important: !important, liked, id}, ...data.slice(index + 1)];
-
-      return this.setState(() => ({data: newData}));
-    }
-  };
-
   render() {
+    const {data, searchingQuerry, filter} = this.state,
+          totalLikes = data.filter(item => item.liked).length,
+          totalPosts = data.length,
+          visiblePosts = this.filterPosts(this.returnFindedPosts(searchingQuerry), filter);
+    
     return (
 
       <AppDiv>
-        <Header totalPosts={this.state.data.length} totalLikes={totalLikes}/>
+        <Header
+          totalPosts={ totalPosts }
+          totalLikes={ totalLikes }
+        />
         <div className='search-panel d-flex'>
           <SearchPanel
-            searchingPosts = { this.searchingPosts }
-            clearInput = { this.state.searching ? this.state.searching : ''}
+            searchingQuerry = { this.searchingQuerry }
           />
           <SearchPanelFilter
-            showLikedPosts={ this.showLikedPosts }
-            showAllPosts= { this.showAllPosts }
+            setFilter={ this.setFilter }
           />
         </div>
         <PostList
-          posts={this.state.data}
-          clickTrach={ id => { this.deletePost(id); }}
-          clickLike={ id => {this.clickLike(id); }}
-          clickImportant={ id => {this.clickImportant(id); }}
-          likedPostsOnly={this.state.likedPostsOnly}
-          searching = { this.state.searching ? this.state.searching : false }
+          posts={visiblePosts}
+          changindData={ (id, operation) => { this.changindData(id, operation); }}
         />
         <PostAddItem addPost={ (event, label) => { this.addPost(event, label) }}/>
       </AppDiv>

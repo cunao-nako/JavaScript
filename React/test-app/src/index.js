@@ -1,38 +1,15 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-class Element extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      score: 26,
-    };
-    this.plusScore = this.plusScore.bind(this);
-  }
+const JSXH1 = <h1>Hello, World!</h1>;
 
-  plusScore() { this.setState(state => ({ score: state.score += 1 })); }
+let ordinaryH1 = document.createElement('h1');
 
-  render() {
-    let {name, surname} = this.props,
-        {score} = this.state;
-    return(
-      <>
-        <h3>Name: {name}, Surname: {surname}, Score: {score}</h3>
-        <button onClick={this.plusScore}>+</button>
-      </>
-    );
-  }
-}
+console.log('ordinaryH1:');
+console.dir(ordinaryH1);
 
-const All = () => {
-  return(
-    <>
-      <Element name='John' surname='Smith'/>
-      <Element name='Alex' surname='Miller'/>
-      <Element name='Sarah' surname='Fisher'/>
-    </>
-  );
-}
+console.log('JSXH1:',JSXH1);
 
-ReactDOM.render(<All />, document.getElementById('root'));
+
+ReactDOM.render(JSXH1, document.getElementById('root'));
