@@ -55,15 +55,23 @@ class App extends Component{
   }
 
   changeActiveButton = target => {
+    if (activeButton === target) {
+      activeButton.removeAttribute('style');
+      activeButton = undefined;
+      return false;
+    }
     if (!activeButton) {
       activeButton = target;
       activeButton.style.backgroundColor = '#007bff';
       activeButton.style.color = 'white';
-    } else {
+      return false;
+    } 
+    if (activeButton) {
       activeButton.removeAttribute('style');
       activeButton = target;
       activeButton.style.backgroundColor = '#007bff';
       activeButton.style.color = 'white';
+      return false;
     }
   }
 
@@ -88,50 +96,39 @@ class App extends Component{
         liked: false,
         id,
       });
+
       this.setState(() => ({ data: newData }));
       event.target.reset();
     }
   };
 
-  changindData = (id, operation) => {
+  changindData = (itemId, operation) => {
 
-    let index = this.state.data.indexOf(this.state.data.find(item => item.id === id)),
-        newData;
+    let data = this.state.data,
+        index = data.indexOf(data.find(item => item.id === itemId)),
+        newData,
+        {label, important, liked, id} = data[index];
 
     if (operation === 'delete') {
-      if (this.state.data[index].liked) { this.likesCounter(false); }
+      if (data[index].liked) { this.likesCounter(false); }
 
-      newData = [...this.state.data.slice(0, index), ...this.state.data.slice(index + 1)];
+      newData = [...data.slice(0, index), ...data.slice(index + 1)];
+
       return this.setState( () => ({ data: newData }));
     }
 
     if (operation === 'liked') {
-      let {label, important, liked, id} = this.state.data[index];
-
       if (!liked) { this.likesCounter(); }
       else { if(totalLikes) { this.likesCounter(false); }}
 
-      newData = [...this.state.data.slice(0, index)];
-      newData.push({
-        label,
-        important,
-        liked: !liked,
-        id,
-      });
-      newData = [...newData, ...this.state.data.slice(index + 1)];
+      newData = [...data.slice(0, index), {label, important, liked: !liked, id}, ...data.slice(index + 1)];
+    
       return this.setState(() => ({data: newData}));
     }
 
     if (operation === 'important') {
-      let {label, important, liked, id} = this.state.data[index];
-      newData = [...this.state.data.slice(0, index)];
-      newData.push({
-        label,
-        important: !important,
-        liked,
-        id,
-      });
-      newData = [...newData, ...this.state.data.slice(index + 1)];
+      newData = [...this.state.data.slice(0, index), {label, important: !important, liked, id}, ...data.slice(index + 1)];
+
       return this.setState(() => ({data: newData}));
     }
   };

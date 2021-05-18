@@ -8,6 +8,18 @@ import './post-list.css';
 
 class PostList extends Component {
 
+  searchingPosts = (item, text, inLiked = false) => {
+    if (!inLiked) {
+      if (item.label.toLowerCase().includes(text.toLowerCase())) {
+        return this.element(item);
+      } else {  return false; }
+    } else {
+      if (item.label.toLowerCase().includes(text.toLowerCase()) && item.liked) {
+        return this.element(item);
+      } else { return false; }
+    }
+  }
+
   element = item => {
     return(
       <li className='list-group-item' key={item.id}>
@@ -25,19 +37,21 @@ class PostList extends Component {
 
   render() {
     const elements = this.props.posts.map(item => {
-      if ( this.props.searching && !this.props.likedPostsOnly ) {
-        if (item.label.toLowerCase().includes(this.props.searching.toLowerCase())) { return this.element(item); }
-        else { return false; }
+      let { searching, likedPostsOnly } = this.props;
+
+      if ( searching && !likedPostsOnly ) {
+        return this.searchingPosts(item, searching);
       }
-      if( this.props.likedPostsOnly ) {
-        if ( this.props.searching ) {
-          if (item.label.toLowerCase().includes(this.props.searching.toLowerCase()) && item.liked) { return this.element(item); }
-          else { return false; }
+      if ( likedPostsOnly ) {
+        if ( searching ) {
+          return this.searchingPosts(item, searching, true);
         }
-        if (item.liked) { return this.element(item); }
-        else { return false; }
+        if ( item.liked ) {
+          return this.element(item);
+        }
+        return false;
       }
-      else { return this.element(item); }
+      return this.element(item);
     });
     
     return(
