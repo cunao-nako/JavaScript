@@ -13,15 +13,13 @@ const AppDiv = styled.div`
   max-width: 800px;
 `;
 
-let activeButton;
-
 class App extends Component{
   constructor(props) {
     super(props);
     this.state = {
       data: [],
       likedPostsOnly: false,
-      filter: '',
+      filter: 'all',
       searchingQuerry: '',
     };
   }
@@ -36,11 +34,7 @@ class App extends Component{
 
   setFilter = filter => this.setState({filter});
 
-  filterPosts = (items, filter) => {
-    if (filter === 'liked') {
-      return items.filter(post => post.liked);
-    } else { return items; }
-  }
+  filterPosts = (items, filter) => filter === 'liked' ? items.filter(post => post.liked) : items;
 
   addPost = label => {
     let data = this.state.data,
@@ -80,27 +74,6 @@ class App extends Component{
     }
   }
 
-  changeActiveButton = target => {
-    if (activeButton === target) {
-      activeButton.removeAttribute('style');
-      activeButton = undefined;
-      return false;
-    }
-    if (!activeButton) {
-      activeButton = target;
-      activeButton.style.backgroundColor = '#007bff';
-      activeButton.style.color = 'white';
-      return false;
-    } 
-    if (activeButton) {
-      activeButton.removeAttribute('style');
-      activeButton = target;
-      activeButton.style.backgroundColor = '#007bff';
-      activeButton.style.color = 'white';
-      return false;
-    }
-  }
-
   render() {
     const {data, searchingQuerry, filter} = this.state,
           totalLikes = data.filter(item => item.liked).length,
@@ -113,13 +86,14 @@ class App extends Component{
         <Header
           totalPosts={ totalPosts }
           totalLikes={ totalLikes }
-        />
+      />
         <div className='search-panel d-flex'>
           <SearchPanel
             searchingQuerry = { this.searchingQuerry }
           />
           <SearchPanelFilter
             setFilter={ this.setFilter }
+            filter={ filter }
           />
         </div>
         <PostList
