@@ -1,15 +1,74 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-const JSXH1 = <h1>Hello, World!</h1>;
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      names: [],
+      currentName: '',
+    }
+  }
 
-let ordinaryH1 = document.createElement('h1');
+  onSubmit = input => {
+    const newName = [...this.state.names, input.value];
+    this.setState(({names: newName, currentName: newName[newName.length - 1]}));
+    input.value = '';
+  }
 
-console.log('ordinaryH1:');
-console.dir(ordinaryH1);
+  onPrevName = () => {
+    const { names, currentName } = this.state;
 
-console.log('JSXH1:',JSXH1);
+    let index = names.indexOf(currentName) - 1;
+
+    if (index === -1) { index = names.length - 1; }
+
+    this.setState({currentName: names[index]})
+  }
+
+  onNextName = () => {
+    const { names, currentName } = this.state;
+
+    let index = names.indexOf(currentName) + 1;
+
+    if (index === names.length) { index = 0; }
+
+    this.setState({currentName: names[index]})
+  }
+
+  onLastName = () => this.setState(state => ({currentName: state.names[state.names.length - 1]}));
+
+  render() {
+    const { currentName } = this.state;
+
+    return (
+      <>
+        <h1>Hello, <span style={{"color": "lightgreen"}}>{currentName}</span></h1>
+        <input
+          type='text'
+          placeholder='Enter your name:'
+        />
+        <button
+          onClick={() => this.onSubmit(document.querySelector('input'))}
+        >Submit</button><br></br><br></br>
+        <button
+          onClick={this.onPrevName}
+        >Previous Name</button>
+        <button
+          onClick={this.onNextName}
+        >Next Name</button><br></br>
+        <button
+          onClick={this.onLastName}
+        >Last Name</button>
+      </>
+    );
+  }
+}
 
 
-ReactDOM.render(JSXH1, document.getElementById('root'));
+
+
+
+ReactDOM.render(<App/>, document.querySelector('#app'));
+
